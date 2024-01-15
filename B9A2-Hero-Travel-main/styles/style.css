@@ -1,0 +1,100 @@
+/* work scans font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.containar{
+    width: 82%;
+    margin: 0 auto ;
+}
+/* button style */
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.75rem;
+    cursor: pointer;
+    border: 0;
+}
+
+/* style start */
+.section-title {
+    font-size: 2.25rem;
+    font width: 700;
+    color: #131318;
+}
+.home {
+    color: #FF5400;
+}
+
+.span1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #FF5400;
+}
+.img1{
+    display: flex;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul {
+    display: flex;
+}
+nav li {
+    list-style: none;
+    margin-right: 1.8rem;
+    font-weight: 500;
+    font size: 1.1rem;
+
+}
+/* div section */
+.banner {
+    background-repeat: no-repeat;
+}
+/* main section style */
+.main1 {
+    display: flex;
+    gap: 50px;
+    flex-direction: row-reverse;
+}
+.main3{
+    color: #131318;
+    font-size: 2.5rem;
+}
+.main4{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.main3 ul li{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.main5{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.rorate{
+    rotate: (45deg);
+}
+/* Responsive section */
+/* responsive for mobile device */
+@media screen and (max-width:600px) {
+    
+}
+/* rsponsive for mediuam device */
+@media screen and (min-width:600px) and (max-width:992px) {
+    
+}
