@@ -1,100 +1,112 @@
 /* work scans font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url(font-family: 'Work Sans', sans-serif;);
+/* header style */
 
-* {
-    font-family: 'Work Sans', sans-serif;
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
 }
-a{
-    text-decoration: none;
+header nav .div1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.containar{
-    width: 82%;
-    margin: 0 auto ;
+header nav .div1 img {
+  width: 48px;
+  height: 56px;
 }
-/* button style */
-.btn-primary {
-    border-radius: 8px;
-    background: #FF900E;
-    padding: 20px 25px;
-    color: #FFF;
-    font-weight: 600;
-    font-size: 1.75rem;
-    cursor: pointer;
-    border: 0;
+header nav .div1 h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+header nav .link ul {
+  display: flex;
+  gap: 44px;
+  list-style: none;
+}
+header nav .link ul li span {
+  font-weight: 700;
+}
+header nav .link ul li a {
+  color: var(--dark-nav);
+  font-size: 1.125rem;
+}
+header nav .menu {
+  visibility: hidden;
+  position: absolute;
+}
+header nav .menu img {
+  width: 24px;
+  height: 24px;
+}
+header .banner1 {
+  width: 100%;
+  height: 75vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* style start */
-.section-title {
-    font-size: 2.25rem;
-    font width: 700;
-    color: #131318;
+header .banner1 h1 {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
 }
-.home {
-    color: #FF5400;
+header p {
+  color: #fff;
+  width: 50%;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 3rem;
 }
 
-.span1 {
-    font-size: 2.25rem;
-    font-weight: 800;
-    color: #FF5400;
+header .banner1 .input-text {
+  display: flex;
+  padding: 16px 16px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
 }
-.img1{
-    display: flex;
+header .banner1 .input-text input[type="text"] {
+  width: 174px;
+  height: 52px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
 }
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .banner1 .input-text input[type="text"]::placeholder {
+  color: rgba(19, 19, 24, 0.5);
+  padding-left: 16px;
 }
-nav>ul {
-    display: flex;
+header .banner1 .input-text select {
+  width: 174px;
+  height: 52px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding-left: 16px;
 }
-nav li {
-    list-style: none;
-    margin-right: 1.8rem;
-    font-weight: 500;
-    font size: 1.1rem;
+header .banner .input-text button {
+  width: 174px;
+  height: 52px;
+  gap: 8px;
+}
 
-}
-/* div section */
-.banner {
-    background-repeat: no-repeat;
-}
-/* main section style */
-.main1 {
-    display: flex;
-    gap: 50px;
-    flex-direction: row-reverse;
-}
-.main3{
-    color: #131318;
-    font-size: 2.5rem;
-}
-.main4{
-    color: rgba(19, 19, 24, 0.70);
-    font-size: 1rem;
-    font-weight: 400;
-}
-.main3 ul li{
-    color: rgba(19, 19, 24, 0.70);
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-.main5{
-    color: #5A5A5D;
-    font-size: 1rem;
-    font-weight: 400;
-}
-.rorate{
-    rotate: (45deg);
-}
-/* Responsive section */
-/* responsive for mobile device */
-@media screen and (max-width:600px) {
-    
-}
-/* rsponsive for mediuam device */
-@media screen and (min-width:600px) and (max-width:992px) {
-    
-}
