@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-.primary {
+.btn-primary {
   border-radius: 8px;
   background: var(--primary-color);
   color: white;
@@ -43,6 +43,9 @@ button:hover {
 span {
   color: var(--primary-color);
 }
+/* End */
+
+
 /* header style */
 
 header nav {
@@ -84,6 +87,9 @@ header nav .menu img {
   width: 24px;
   height: 24px;
 }
+/* Header nav section end  */
+
+/* Header banner section */
 header .banner1 {
   width: 100%;
   height: 75vh;
@@ -146,7 +152,7 @@ header .banner1 .input-text select {
   border-radius: 8px;
   padding-left: 16px;
 }
-header .banner .input-text button {
+header .banner1 .input-text button {
   width: 174px;
   height: 52px;
   gap: 8px;
@@ -200,19 +206,21 @@ main .our-tour1 image{
   display: flex;
 }
 
-main .our-destination{
+/* Destination Section  */
+
+main .our-destination {
   margin-top: 100px;
   width: 100%;
   text-align: center;
 }
-main .our-destination1 h1 {
+main .our-destination-1 h1 {
   color: var(--dark-title);
   margin-bottom: 24px;
   font-size: 2.25rem;
   font-weight: 800;
 }
 
-main .our-destination1 p {
+main .our-destination-1 p {
   width: 643px;
   color: var(--dark-dis);
   line-height: 26px;
@@ -322,7 +330,7 @@ main .destination-img .rows-2 {
     url('../Images/Rectangle\ 10.png');
   background-repeat
 }
-.row-rev{
+.row-rev {
   display: none;
   width: 100%;
   margin: 0;
@@ -338,12 +346,14 @@ main .destination-img .rows-2 {
   font-size: 20px;
   font-weight: 700;
 }
-.image-rows{
+.image-rows {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .choose {
+/* Why choose us section  */
+
+main .choose-1 {
   display: flex;
   margin-top: 100px;
   justify-content: center;
@@ -354,14 +364,14 @@ main .choose {
   text-align: center;
 }
 
-main .choose-content h1 {
+main .choose-1-sec h1 {
   color: var(--dark-title);
   text-align: center;
   font-size: 2.25rem;
   font-weight: 800;
   padding-bottom: 24px;
 }
-main .choose-content p {
+main .choose-1-sec p {
   width: 643px;
   color: var(--dark-dis);
   text-align: center;
@@ -584,13 +594,13 @@ main .discount-images .discount-card {
   width: calc(100% - 56px - 56px);
   height: 500px;
   margin-bottom: 24px;
-  background-image: url("../Images/type1.png");
+  background-image: url('../Images/Rectangle\ 12.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 main .discount-images .middel {
-  background-image: url("../Images/type2.png");
+  background-image: url('../Images/Rectangle\ 12.png');
 }
 
 main .discount-card .card {
@@ -668,6 +678,7 @@ main .discount-images .middel {
   align-items: center;
   justify-content: left;
 }
+/* footer style  */
 footer {
   display: flex;
   flex-direction: column;
@@ -686,19 +697,19 @@ footer {
   padding-bottom: 5vh;
 }
 
-footer .logo {
+footer .logo-img {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding-bottom: 15px;
 }
 
-footer .logo img {
+footer .logo-img img {
   width: 48px;
   height: 56px;
 }
 
-footer .logo h1 {
+footer .logo-img h1 {
   font-size: 2.25rem;
   font-weight: 800;
 }
@@ -712,7 +723,7 @@ footer p {
   margin-bottom: 33px;
 }
 
-footer .social {
+footer .social-icon {
   display: flex;
   gap: 30px;
 }
@@ -723,4 +734,442 @@ footer hr {
   width: 872px;
   height: 1px;
   background: rgba(19, 19, 24, 0.1);
+}
+
+/* Responsive  for mobile device */
+
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* header  */
+
+  header,
+  main {
+    padding: 44px 20px;
+  }
+
+  header nav .div1 img {
+    width: 35px;
+    height: 33px;
+  }
+
+  header nav .div1 h1 {
+    font-size: 1.375rem;
+  }
+
+  header nav .link {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  header .banner1 h1 {
+    font-size: 1.375rem;
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+
+  header p {
+    width: 90%;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  header .banner1 .input-text select {
+    width: 100%;
+  }
+
+  header .banner1 .input-text button {
+    width: 100%;
+  }
+
+  header .banner1 .input-text input[type="text"] {
+    width: 100%;
+  }
+
+  header .banner1 .input-text {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    margin: 32px auto;
+    width: 80%;
+  }
+
+  header nav .menu {
+    visibility: visible;
+    position: static;
+  }
+
+
+  /* popular */
+
+  main .our-tour {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main .our-tour1 {
+    width: 100%;
+  }
+
+  main .our-tour1 ul {
+    max-width: 90%;
+  }
+
+  main .our-tour img {
+    width: 100%;
+  }
+
+  /* destination  */
+
+  main .our-destination-1 h1 {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  main .our-destination-1 p {
+    width: 80%;
+  }
+
+  .destination-img {
+    display: none;
+  }
+
+  .image-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .row-rev {
+    display: block;
+  }
+
+  .image-rows img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* why choose  */
+
+  main .choose-1-sec h1 {
+    font-size: 1.25rem;
+  }
+
+  main .choose-1-sec p {
+    width: 100%;
+  }
+
+  main .card-section {
+    padding: 0;
+  }
+
+  main .choose-card {
+    width: 90%;
+  }
+
+  main .choose-card .first,
+  .second,
+  .third {
+    width: 100%;
+    height: 284px;
+    flex-shrink: 0;
+  }
+
+  /* newsletter  */
+
+  main .newsletter {
+    flex-direction: column;
+  }
+
+  main .news-field {
+    width: 85%;
+  }
+
+  main .news-field h2 {
+    font-size: 20px;
+  }
+
+  main .news-field p {
+    font-size: 14px;
+  }
+
+  main .save {
+    width: 100%;
+  }
+
+  main .save .saveup {
+    width: 40%;
+    height: 20%;
+    bottom: 38px;
+    right: 1px;
+  }
+
+  main .save .saveup h5 {
+    margin: 4px 0;
+    font-size: 0.9rem;
+  }
+
+  main .save .saveup h3 {
+    font-size: 1rem;
+  }
+
+  /* footer  */
+
+  footer .logo-img img {
+    width: 35px;
+    height: 33px;
+  }
+
+  footer .logo-img h1 {
+    font-size: 1.25rem;
+  }
+
+  footer hr {
+    width: 90%;
+  }
+
+  footer p {
+    width: 90%;
+  }
+
+  /* discount  */
+
+  main .discount-content h1 {
+    font-size: 20px;
+  }
+
+  main .discount-content p {
+    width: 100%;
+  }
+
+  main .discount-images .discount-card {
+    height: 700px;
+
+  }
+
+  main .discount-card .card {
+    width: 100%;
+    height: 60%;
+    background-size: 100%;
+    padding: 16px;
+  }
+
+  .middel {
+    padding: 0;
+    margin: 0;
+  }
+
+  .top, .middel, .last {
+    padding-bottom: 16px;
+  }
+
+  main .discount-images .top,
+  .middel,
+  .last {
+    align-items: end;
+  }
+}
+/* Responsive for mediaum device */
+
+@media screen and (max-width: 992px) and (min-width: 600px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* header  */
+
+  header, main {
+    padding: 44px 20px;
+  }
+
+  header nav .div1 img {
+    width: 35px;
+    height: 33px;
+  }
+
+  header nav .div1 h1 {
+    font-size: 1.375rem;
+  }
+
+  header nav .link {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  header .banner1 h1 {
+    font-size: 1.375rem;
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+
+  header p {
+    width: 90%;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  header .banner1 .input-text select {
+    width: 100%;
+  }
+
+  header .banner1 .input-text button {
+    width: 100%;
+  }
+
+  header .banner1 .input-text input[type="text"] {
+    width: 100%;
+  }
+
+  header .banner1 .input-text {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    margin: 32px auto;
+    width: 80%;
+  }
+
+  header nav .menu {
+    visibility: visible;
+    position: static;
+  }
+
+
+  /* popular */
+
+  main .our-tour {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main .our-tour1 {
+    width: 100%;
+  }
+
+  main .our-tour1 ul {
+    max-width: 90%;
+  }
+
+  main .our-tour img {
+    width: 100%;
+  }
+
+  /* destination */
+
+  main .our-destination h1 {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  main .our-destination-1 p {
+    width: 80%;
+  }
+
+  .destination-img {
+    display: none;
+  }
+
+  .image-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .row-rev {
+    display: block;
+  }
+
+  .image-rews img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* why choose  */
+
+  main .choose-1-sec h1 {
+    font-size: 1.25rem;
+  }
+
+  main .choose-1-sec p {
+    width: 100%;
+  }
+
+  main .card-section {
+    padding: 0;
+  }
+
+  main .choose-card {
+    width: 90%;
+  }
+
+  main .choose-card .first,
+  .second,
+  .third {
+    width: 100%;
+    height: 284px;
+    flex-shrink: 0;
+  }
+
+  /* newsletter  */
+
+  main .newsletter {
+    flex-direction: column;
+  }
+
+  main .news-field {
+    width: 85%;
+  }
+
+  main .news-field h2 {
+    font-size: 20px;
+  }
+
+  main .news-field p {
+    font-size: 14px;
+  }
+
+  main .save {
+    width: 100%;
+  }
+
+  main .save .saveup {
+    width: 40%;
+    height: 20%;
+    bottom: 38px;
+    right: 1px;
+  }
+
+  main .save .saveup h5 {
+    margin: 4px 0;
+    font-size: 0.9rem;
+  }
+
+  main .save .saveup h3 {
+    font-size: 1rem;
+  }
+
+  /* footer  */
+
+  footer .logo-img img {
+    width: 35px;
+    height: 33px;
+  }
+
+  footer .logo-img img h1 {
+    font-size: 1.25rem;
+  }
+
+footer hr {
+  width: 90%;
+}
+
+  footer p {
+    width: 90%;
+  }
 }
