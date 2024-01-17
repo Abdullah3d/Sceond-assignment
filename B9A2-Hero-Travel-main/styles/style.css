@@ -435,7 +435,7 @@ main .third {
   background: rgba(41, 206, 246, 0.05);
 }
 /* newslatter section */
-main .newsletter {
+main .newslettersec {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -443,7 +443,7 @@ main .newsletter {
   gap: 24px;
 }
 
-main .news-field {
+main .newslettersec1 {
   display: flex;
   flex-direction: column;
   width: calc(50% - 12px);
@@ -452,28 +452,28 @@ main .news-field {
   padding: 40px;
 }
 
-main .news-field h2 {
+main .newslettersec1 h2 {
   color: #131318;
   font-size: 24px;
   font-weight: 800;
   padding-bottom: 16px;
 }
 
-main .news-field p {
+main .newslettersec1 p {
   width: 100%;
   color: #5a5a5d;
   line-height: 26px;
   padding-bottom: 24px;
 }
 
-main .news-field hr {
+main .newslettersec1 hr {
   width: 100%;
   height: 1px;
   background: rgba(19, 19, 24, 0.1);
   margin-bottom: 24px;
 }
 
-main .news-field input {
+main .newslettersec1 input {
   width: calc(100% - 16px);
   height: 52px;
   flex-shrink: 0;
@@ -485,11 +485,11 @@ main .news-field input {
   padding-left: 20px;
 }
 
-main .news-field input::placeholder {
+main .newslettersec1 input::placeholder {
   color: rgba(19, 19, 24, 0.3);
 }
 
-main .news-field button {
+main .newslettersec1 button {
   width: 100%;
   height: 52px;
   flex-shrink: 0;
@@ -500,12 +500,12 @@ main .news-field button {
   font-weight: 800;
 }
 
-main .save {
+main .savesec {
   width: calc(50% - 12px);
   position: relative;
 }
 
-main .save .saveup {
+main .savesec .savesec1  {
   position: absolute;
   bottom: 51px;
   right: 6px;
@@ -517,14 +517,14 @@ main .save .saveup {
   background: #ff5400;
 }
 
-main .save .saveup h5 {
+main .savesec .savesec1 h5 {
   color: #fff;
   margin-top: 15px;
   text-align: center;
   font-size: 24px;
 }
 
-main .save .saveup h3 {
+main .savesec .savesec1 h3 {
   color: #fff;
   text-align: center;
   font-family: Mulish;
@@ -534,7 +534,7 @@ main .save .saveup h3 {
   line-height: normal;
 }
 
-main .save img {
+main .savesec img {
   width: 100%;
   height: 100%;
 }
@@ -882,61 +882,42 @@ footer hr {
 
   /* newsletter  */
 
-  main .newsletter {
+  main .newslettersec {
     flex-direction: column;
   }
 
-  main .news-field {
+  main .newslettersec1 {
     width: 85%;
   }
 
-  main .news-field h2 {
+  main .newslettersec1 h2 {
     font-size: 20px;
   }
 
-  main .news-field p {
+  main .newslettersec1 p {
     font-size: 14px;
   }
 
-  main .save {
+  main .savesec {
     width: 100%;
   }
 
-  main .save .saveup {
+  main .savesec .savesec1 {
     width: 40%;
     height: 20%;
     bottom: 38px;
     right: 1px;
   }
 
-  main .save .saveup h5 {
+  main .savesec .savesec1 h5 {
     margin: 4px 0;
     font-size: 0.9rem;
   }
 
-  main .save .saveup h3 {
+  main .savesec .savesec1 h3 {
     font-size: 1rem;
   }
-
-  /* footer  */
-
-  footer .logo-img img {
-    width: 35px;
-    height: 33px;
-  }
-
-  footer .logo-img h1 {
-    font-size: 1.25rem;
-  }
-
-  footer hr {
-    width: 90%;
-  }
-
-  footer p {
-    width: 90%;
-  }
-
+  
   /* discount  */
 
   main .discount-content h1 {
@@ -974,6 +955,27 @@ footer hr {
     align-items: end;
   }
 }
+
+  /* footer  */
+
+  footer .logo-img img {
+    width: 35px;
+    height: 33px;
+  }
+
+  footer .logo-img h1 {
+    font-size: 1.25rem;
+  }
+
+  footer hr {
+    width: 90%;
+  }
+
+  footer p {
+    width: 90%;
+  }
+
+  
 /* Responsive for mediaum device */
 
 @media screen and (max-width: 992px) and (min-width: 600px) {
@@ -1118,39 +1120,39 @@ footer hr {
 
   /* newsletter  */
 
-  main .newsletter {
+  main .newslettersec {
     flex-direction: column;
   }
 
-  main .news-field {
+  main .newslettersec1 {
     width: 85%;
   }
 
-  main .news-field h2 {
+  main .newslettersec h2 {
     font-size: 20px;
   }
 
-  main .news-field p {
+  main .newslettersec p {
     font-size: 14px;
   }
 
-  main .save {
+  main .savesec {
     width: 100%;
   }
 
-  main .save .saveup {
+  main .savesec .savesec1 {
     width: 40%;
     height: 20%;
     bottom: 38px;
     right: 1px;
   }
 
-  main .save .saveup h5 {
+  main .savesec .savesec1 h5 {
     margin: 4px 0;
     font-size: 0.9rem;
   }
 
-  main .save .saveup h3 {
+  main .savesec .savesec1 h3 {
     font-size: 1rem;
   }
 
